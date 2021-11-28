@@ -40,6 +40,8 @@ class MyCanvasView(context: Context): View(context) {
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
+        // Set the canvas background color
+        canvas.drawColor(backgroundColor)
         // Draw the drawing so far
         canvas.drawPath(drawing, paint)
         // Draw any current squiggle
